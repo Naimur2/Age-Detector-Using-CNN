@@ -1,5 +1,5 @@
 # USAGE
-# python detect_age.py --image images/adrian.png --face face_detector --age age_detector
+# python detect_age.py --image images/duterte.png --face face_detector --age age_detector
 
 import argparse
 import os
@@ -87,7 +87,7 @@ for i in range(0, detections.shape[2]):
 		cv2.rectangle(image, (startX, startY), (endX, endY),
 			(0, 0, 255), 2)
 		cv2.putText(image, text, (startX, y),
-			cv2.FONT_HERSHEY_SIMPLEX, 0.45, (100, 0, 100), 2)
+			cv2.FONT_HERSHEY_SIMPLEX, 0.45, (165, 252, 3), 2)
 
 # display the output image
 cv2.imshow("Image", image)
